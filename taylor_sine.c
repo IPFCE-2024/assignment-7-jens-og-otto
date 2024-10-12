@@ -16,6 +16,5 @@ double taylor_sine(double x, int n) {
 
     fact_val *= (2 * i + 2) * ( 2 * i + 3);
   } 
-  //test
   return taylor_sum;
 }
