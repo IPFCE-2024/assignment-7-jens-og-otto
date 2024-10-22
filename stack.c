@@ -13,7 +13,7 @@ void push(int x, stack *s) {
   node *new = malloc(sizeof(node));
   new->data = x;
   new->next = s->head;
-  s->head->next;
+  new->next= s->head;
   s->head = new;
 }
 
@@ -22,7 +22,7 @@ int pop(stack *s) {
   if (s->head == NULL) // tjekker om stacken er tom
   {
     printf("stack er tom \n"); // udskriver hvis den er tom
-    return -1; // returnerer ingentind
+    return -1; // returnerer ingenting
   }
   
   node* temp = s->head;
